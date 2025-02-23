@@ -2,6 +2,8 @@ import { Extension, Readme, Service } from "talkops";
 
 const extension = new Extension("Boilerplate NodeJS");
 
+extension.setDockerRepository("ghcr.io/talkops/talkops-boilerplate-nodejs")
+
 extension.setInstructions(`
 You are a note-taking assistant.
 You are an intelligent and efficient note-taking assistant.
@@ -28,11 +30,11 @@ extension.setFunctionSchemas([
 ]);
 
 extension.setFunctions([
-  function save_note (note) {
+  function save_note(note) {
     console.log(`Do something with: ${note}`);
     return "Done.";
-  }
+  },
 ]);
 
-new Readme(process.env.README_TEMPLATE_URL, '/app/README.md', extension);
-new Service(process.env.AGENT_URLS.split(',') , extension);
+new Readme(process.env.README_TEMPLATE_URL, "/app/README.md", extension);
+new Service(process.env.AGENT_URLS.split(","), extension);

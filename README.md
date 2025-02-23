@@ -1,4 +1,5 @@
 # TalkOps Extension: Boilerplate NodeJS
+![Docker Pulls](https://img.shields.io/docker/pulls/ghcr.io/talkops/talkops-boilerplate-nodejs)
 
 A TalkOps Extension made to work with [TalkOps](https://link.talkops.app/talkops).
 
@@ -19,8 +20,7 @@ name: talkops
 services:
 ...
   talkops-extension-boilerplate-nodejs:
-    build:
-      context: [dockerfile-path]
+    image: ghcr.io/talkops/talkops-boilerplate-nodejs
     restart: unless-stopped
 ```
 
@@ -30,7 +30,3 @@ services:
 
 A comma-separated list of WebSocket server URLs for real-time communication with specified agents.
 * Default value: `ws://talkops`
-
-## Join the community
-
-* [Discord](https://link.talkops.app/discord)
