@@ -29,3 +29,4 @@ services:
 
 A comma-separated list of WebSocket server URLs for real-time communication with specified agents.
 * Default value: `ws://talkops`
+* Possible values: `ws://talkops1` `ws://talkops2`
