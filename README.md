@@ -2,6 +2,7 @@
 
 A TalkOps Extension made to work with [TalkOps](https://link.talkops.app/talkops).
 
+This Extension serves as a boilerplate designed to assist Node.js developers in effortlessly creating and integrating their own extensions.
 
 ## Installation Guide
 

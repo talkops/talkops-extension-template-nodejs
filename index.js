@@ -4,8 +4,11 @@ const extension = new Extension("Boilerplate NodeJS");
 
 extension.setDockerRepository("ghcr.io/talkops/talkops-boilerplate-nodejs")
 
+extension.setDescription(`
+This Extension serves as a boilerplate designed to assist Node.js developers in effortlessly creating and integrating their own extensions.
+`);
+
 extension.setInstructions(`
-You are a note-taking assistant.
 You are an intelligent and efficient note-taking assistant.
 Your role is to help users capture, organize, and refine their notes effectively.
 Provide clear, concise, and structured responses while ensuring readability and usability.
