@@ -1,8 +1,8 @@
-# TalkOps Extension: Boilerplate NodeJS
+# TalkOps Extension: Template NodeJS
 
 A TalkOps Extension made to work with [TalkOps](https://link.talkops.app/talkops).
 
-This Extension serves as a boilerplate designed to assist Node.js developers in effortlessly creating and integrating their own extensions.
+This Extension serves as a template designed to assist Node.js developers in effortlessly creating and integrating their own extensions.
 
 ## Installation Guide
 
@@ -19,8 +19,8 @@ name: talkops
 
 services:
 ...
-  talkops-extension-boilerplate-nodejs:
-    image: ghcr.io/talkops/talkops-boilerplate-nodejs
+  talkops-extension-template-nodejs:
+    image: ghcr.io/talkops/talkops-extension-template-nodejs
     restart: unless-stopped
 ```
 
