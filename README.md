@@ -20,7 +20,7 @@ name: talkops
 services:
 ...
   talkops-extension-template-nodejs:
-    image: ghcr.io/talkops/talkops-extension-template-nodejs
+    image: ghcr.io/talkops/talkops-template-nodejs
     restart: unless-stopped
 ```
 
