@@ -1,0 +1,14 @@
+{
+  "name": "save_note",
+  "description": "Save a note after confirmation.",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "note": {
+        "type": "string",
+        "description": "The note."
+      }
+    },
+    "required": ["note"]
+  }
+}

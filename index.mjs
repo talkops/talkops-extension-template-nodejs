@@ -2,7 +2,7 @@ import { Extension, Readme, Service } from "talkops";
 
 const extension = new Extension("Template NodeJS");
 
-extension.setDockerRepository("ghcr.io/talkops/talkops-template-nodejs")
+extension.setDockerRepository("ghcr.io/talkops/talkops-template-nodejs");
 
 extension.setDescription(`
 This Extension serves as a template designed to assist Node.js developers in effortlessly creating and integrating their own extensions.
@@ -15,22 +15,9 @@ Provide clear, concise, and structured responses while ensuring readability and 
 Adapt to the user's style and preferences to enhance their note-taking experience.
 `);
 
-extension.setFunctionSchemas([
-  {
-    name: "save_note",
-    description: "Save a note after confirmation",
-    parameters: {
-      type: "object",
-      properties: {
-        note: {
-          type: "string",
-          description: "The related note",
-        },
-      },
-      required: ["note"],
-    },
-  },
-]);
+import save_note from "schemas/functions/save_note.json" with { type: "json" };
+
+extension.setFunctionSchemas([save_note]);
 
 extension.setFunctions([
   function save_note(note) {
