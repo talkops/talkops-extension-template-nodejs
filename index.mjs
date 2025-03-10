@@ -2,7 +2,7 @@ import { Extension, Readme, Service } from "talkops";
 
 const extension = new Extension("Template NodeJS");
 
-extension.setDockerRepository("ghcr.io/talkops/talkops-template-nodejs");
+extension.setDockerRepository("ghcr.io/talkops/talkops-extension-template-nodejs");
 
 extension.setDescription(`
 This Extension serves as a template designed to assist Node.js developers in effortlessly creating and integrating their own extensions.
